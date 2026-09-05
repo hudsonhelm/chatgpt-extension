@@ -1,0 +1,15 @@
+# Detect text files automatically and normalize repository line endings.
+* text=auto
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Keep documentation and browser-extension source files consistent across platforms.
+*.md text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
