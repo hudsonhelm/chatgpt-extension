@@ -11,6 +11,8 @@ dist/
 build/
 coverage/
 .web-ext-artifacts/
+*.zip
+*.xpi
 
 # Logs and temporary files
 *.log

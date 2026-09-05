@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "completeness": "complete",
+  "conversations": [
+    {
+      "id": "synthetic-chat-001",
+      "title": "Plan a fictional garden",
+      "createdAt": "2025-01-15T14:30:00.000Z",
+      "updatedAt": "2025-01-15T14:35:00.000Z",
+      "archived": false,
+      "messages": [
+        { "id": "synthetic-message-001", "role": "user", "createdAt": "2025-01-15T14:30:00.000Z", "text": "Design a garden for a made-up moon base." },
+        { "id": "synthetic-message-002", "role": "assistant", "createdAt": "2025-01-15T14:30:10.000Z", "text": "Start with a sealed greenhouse and recycled water." }
+      ]
+    },
+    {
+      "id": "synthetic-chat-002",
+      "title": "Invented packing checklist",
+      "createdAt": "2025-02-20T09:00:00.000Z",
+      "updatedAt": "2025-02-20T09:05:00.000Z",
+      "archived": true,
+      "messages": [
+        { "id": "synthetic-message-003", "role": "user", "createdAt": "2025-02-20T09:00:00.000Z", "text": "Make a checklist for an imaginary island trip." }
+      ]
+    }
+  ]
+}

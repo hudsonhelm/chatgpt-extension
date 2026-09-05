@@ -1,0 +1,8 @@
+{
+  "isChatGptHost": true,
+  "pathKind": "home",
+  "hasSidebar": true,
+  "hasNewChatControl": true,
+  "hasLoginControl": false,
+  "conversationLinkCount": 3
+}

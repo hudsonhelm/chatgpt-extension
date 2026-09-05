@@ -1,6 +1,6 @@
 # ChatGPT Extension Project Index
 
-**Document version:** 0.4.0
+**Document version:** 0.5.0
 
 **Last updated:** 2026-09-05  
 **Status:** Active
@@ -42,6 +42,8 @@ All active documents use stable, unversioned filenames. Every archived snapshot 
 | --- | --- |
 | Project root | Stable project entry points and top-level configuration files. |
 | `Docs` | Current planning, requirements, research, architecture, and testing documentation. |
+| `src` | Extension source split into adapters, content entry points, core logic, persistence, state, and UI. |
+| `tests` | Automated tests and synthetic fixtures; no personal conversation content. |
 | `Archive` | Superseded or retired versioned material retained for historical reference. |
 | `Archive/Docs` | Archived material that originally belonged in `Docs`. |
 
@@ -53,6 +55,9 @@ Add new folders to this table when they are created. Also add a corresponding co
 | --- | --- |
 | `Index.md` | Stable master index and maintenance instructions for the project. |
 | [`ProjectCharter.md`](ProjectCharter.md) | Stable guiding reference for the project's purpose, goals, principles, scope, and success measures. |
+| [`README.md`](README.md) | Temporary Firefox loading, automated check, and safety instructions. |
+| [`manifest.json`](manifest.json) | Firefox-first Manifest V3 WebExtension declaration. |
+| [`package.json`](package.json) | Dependency-free Node.js test commands and project metadata. |
 
 ## Docs Contents
 
@@ -65,6 +70,25 @@ Add new folders to this table when they are created. Also add a corresponding co
 | [`PossibleFeatureInventory.md`](Docs/PossibleFeatureInventory.md) | Exploratory list of possible features; it is not approved scope, a roadmap, or a commitment to build. |
 | [`ArchitectureDecisions.md`](Docs/ArchitectureDecisions.md) | Record of technical decisions, alternatives, reasoning, and consequences. |
 | [`TestingNotes.md`](Docs/TestingNotes.md) | Test procedures, environments, results, defects, and retest history. |
+| [`ChatGPTIntegrationResearch.md`](Docs/ChatGPTIntegrationResearch.md) | Dated, privacy-safe investigation of the current ChatGPT web and official API surfaces. |
+
+## Source Contents
+
+| Folder | Purpose |
+| --- | --- |
+| `src/adapters` | Replaceable ChatGPT DOM integration boundary. |
+| `src/content` | Minimal content-script bootstrap and composition root. |
+| `src/core` | Pure capability and privacy-safe diagnostic logic. |
+| `src/persistence` | Extension-local settings storage boundary. |
+| `src/state` | Framework-independent selection and operation state. |
+| `src/ui` | User-visible capability/failure status panel. |
+
+## Test Contents
+
+| Folder or file | Purpose |
+| --- | --- |
+| `tests/*.test.js` | Node built-in tests for manifest shape, capabilities, diagnostics, and state. |
+| `tests/fixtures` | Synthetic capability observations and normalized conversations. |
 
 ## Archive Contents
 

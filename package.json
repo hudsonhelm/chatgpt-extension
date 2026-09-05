@@ -1,0 +1,14 @@
+{
+  "name": "chatgpt-conversation-manager",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Firefox-first foundation for safe, local ChatGPT conversation management.",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

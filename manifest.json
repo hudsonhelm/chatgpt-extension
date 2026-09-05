@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Conversation Manager",
+  "version": "0.0.1",
+  "description": "A local, safety-first foundation for managing ChatGPT conversations.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+        "src/content/bootstrap.js"
+      ],
+      "css": [
+        "src/ui/status.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/adapters/chatgpt-dom.js",
+        "src/core/capabilities.js",
+        "src/core/diagnostics.js",
+        "src/persistence/local-settings-store.js",
+        "src/state/operation-state.js",
+        "src/state/selection-state.js",
+        "src/ui/status-panel.js",
+        "src/content/main.js"
+      ],
+      "matches": [
+        "https://chatgpt.com/*"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "chatgpt-conversation-manager@example.invalid",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
+}

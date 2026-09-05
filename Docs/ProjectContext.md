@@ -1,6 +1,6 @@
 # Project Context
 
-**Version:** 1.0.0
+**Version:** 1.2.0
 
 **Last updated:** 2026-09-05
 
@@ -82,8 +82,9 @@ Optional settings-only cloud synchronization may be considered in a future versi
 - The project charter and documentation conventions are established.
 - Competitor capabilities have been surveyed at a high level.
 - The V1 feature set has been selected and recorded in product requirements.
-- No extension implementation exists yet.
-- The immediate next step is Milestone 0: choose and document the extension foundation, integration boundaries, local storage approach, and test strategy.
+- Milestone 0 is complete. The dependency-free Manifest V3 scaffold loaded successfully in Firefox 155.0.1 and detected the signed-in ChatGPT history surface while keeping mutations disabled.
+- The foundation includes an isolated read-only DOM capability adapter, local settings boundary, privacy-safe diagnostics, explicit selection/operation state modules, and synthetic Node tests.
+- Milestone 1 is next: add safe selection controls for loaded sidebar conversations before implementing archive or strongly confirmed delete operations.
 
 ## Important References
 
@@ -106,5 +107,7 @@ Optional settings-only cloud synchronization may be considered in a future versi
 
 | Version | Date | Summary |
 | --- | --- | --- |
+| 1.2.0 | 2026-09-05 | Recorded successful Firefox acceptance, completed Milestone 0, and identified Milestone 1 as the next step. |
+| 1.1.0 | 2026-09-05 | Updated current state for the in-progress Milestone 0 scaffold and pending Firefox load check. |
 | 1.0.0 | 2026-09-05 | Replaced the template with the approved V1 scope, constraints, working agreements, current state, and immediate next step. |
 | 0.1.0 | 2026-09-05 | Created initial template. |

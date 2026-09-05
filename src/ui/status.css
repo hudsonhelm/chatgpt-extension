@@ -1,0 +1,24 @@
+#chatgpt-manager-status {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  box-sizing: border-box;
+  width: min(360px, calc(100vw - 32px));
+  padding: 12px 14px;
+  border: 1px solid color-mix(in srgb, CanvasText 20%, transparent);
+  border-left: 4px solid #64748b;
+  border-radius: 8px;
+  background: Canvas;
+  color: CanvasText;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 18%);
+  font: 13px/1.4 system-ui, sans-serif;
+}
+
+#chatgpt-manager-status[data-status="available"] { border-left-color: #15803d; }
+#chatgpt-manager-status[data-status="limited"] { border-left-color: #a16207; }
+#chatgpt-manager-status[data-status="unavailable"] { border-left-color: #b91c1c; }
+#chatgpt-manager-status strong,
+#chatgpt-manager-status span { display: block; }
+#chatgpt-manager-status summary { margin-top: 6px; cursor: pointer; }
+#chatgpt-manager-status pre { max-height: 180px; overflow: auto; white-space: pre-wrap; font-size: 11px; }

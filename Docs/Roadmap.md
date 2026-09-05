@@ -4,7 +4,7 @@
 
 **Last updated:** 2026-09-05
 
-**Status:** Active; implementation not started
+**Status:** Active; Milestone 0 complete
 
 **Owner:** Project owner
 
@@ -20,7 +20,7 @@ The user can reliably find conversations, select an explicit working set—inclu
 
 | Milestone | Outcome | Status |
 | --- | --- | --- |
-| 0 — Foundation | Loadable Firefox extension with isolated adapters, local storage, diagnostics, and test scaffolding | Planned |
+| 0 — Foundation | Loadable Firefox extension with isolated adapters, local storage, diagnostics, and test scaffolding | Complete |
 | 1 — Safe visible-history management | Selection plus bulk archive and delete for loaded sidebar conversations | Planned |
 | 2 — Complete history and search | Complete-history retrieval, local indexing, title/full-text/date search, and selection in results | Planned |
 | 3 — Rename and export | Inline rename plus Markdown/JSON export for chats, selections, and search matches | Planned |
