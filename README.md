@@ -1,0 +1,3 @@
+ChatGPT Conversation Manager
+A privacy-focused, Firefox-first browser extension for managing large ChatGPT conversation histories. The planned V1 will provide complete-history retrieval, full-text and date search, multi-selection—including within search results—safe bulk archive and delete, inline chat renaming, Markdown/JSON export, and local settings backup and restore.
+The project is currently in the planning and foundation stage. It prioritizes local data storage, transparent destructive actions, maintainable ChatGPT integration boundaries, and clear reporting of incomplete results or partial failures. No telemetry, external account, or cloud service is planned for V1.
