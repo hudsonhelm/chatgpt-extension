@@ -1,6 +1,7 @@
 # ChatGPT Extension Project Index
 
-**Document version:** 0.3.0  
+**Document version:** 0.3.1
+
 **Last updated:** 2026-09-05  
 **Status:** Active
 
@@ -60,6 +61,7 @@ Add new folders to this table when they are created. Also add a corresponding co
 | [`ProjectContext.md`](Docs/ProjectContext.md) | Durable project background, goals, constraints, roles, and working agreements. |
 | [`ProductRequirements.md`](Docs/ProductRequirements.md) | Product scope, user needs, functional requirements, and acceptance criteria. |
 | [`CompetitorResearch.md`](Docs/CompetitorResearch.md) | Structured research on comparable products, features, licenses, and lessons. |
+| [`PossibleFeatureInventory.md`](Docs/PossibleFeatureInventory.md) | Exploratory list of possible features; it is not approved scope, a roadmap, or a commitment to build. |
 | [`ArchitectureDecisions.md`](Docs/ArchitectureDecisions.md) | Record of technical decisions, alternatives, reasoning, and consequences. |
 | [`TestingNotes.md`](Docs/TestingNotes.md) | Test procedures, environments, results, defects, and retest history. |
 
