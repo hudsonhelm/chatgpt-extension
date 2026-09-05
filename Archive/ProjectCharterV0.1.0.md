@@ -1,6 +1,6 @@
 # ChatGPT Extension Project Charter
 
-**Document version:** 0.2.0  
+**Document version:** 0.1.0  
 **Last updated:** 2026-09-05  
 **Status:** Active  
 **Filename policy:** Keep the active document named `ProjectCharter.md`. Store historical snapshots in `Archive` with versioned filenames such as `ProjectCharterV0.1.0.md`.
@@ -32,7 +32,6 @@ Create a reliable personal extension that adds safe, efficient bulk conversation
 7. Isolate fragile ChatGPT API and interface integrations so changes are easier to diagnose and repair.
 8. Keep the code and operating instructions maintainable by Codex with the project owner acting as product owner and tester.
 9. Deliver work in small, testable milestones rather than building a large feature set at once.
-10. Maintain a private, reviewable version-control history that supports recovery and continuation without exposing secrets or personal conversation data.
 
 ## First Milestone
 
@@ -74,10 +73,6 @@ Inspect relevant open-source projects and verify their licenses before reusing c
 
 Complete and test the current milestone before adding tags, folders, full-text search, exports, notes, bookmarks, or other enhancements.
 
-### Versioned and Recoverable Work
-
-Treat the private Git repository as the authoritative project record for source and documentation. Keep changes small enough to review, preserve a known working state on the main branch, and use version history to make mistakes recoverable. Never commit credentials, authentication material, private ChatGPT conversation content, or other unnecessary personal data.
-
 ## Current Non-Goals
 
 The first milestone does not include:
@@ -99,8 +94,6 @@ The project owner provides product decisions, testing, operational knowledge, ex
 
 Work should proceed step by step. Decisions that materially affect product behavior, privacy, licensing, destructive operations, or project scope should be presented to the project owner before implementation.
 
-Repository visibility, collaborator access, history rewrites, and deletion of remote branches or releases remain owner-controlled decisions. Remote updates should follow review appropriate to the risk of the change.
-
 ## Technical Reality
 
 ChatGPT does not provide a stable public API specifically for personal conversation management. The extension may need to interact with ChatGPT's current page structure or private web endpoints. These integrations are inherently subject to breakage and must be treated as replaceable adapters rather than assumptions spread throughout the codebase.
@@ -116,8 +109,7 @@ The project is succeeding when:
 - bulk deletion is deliberate, understandable, and safely confirmed;
 - errors identify what failed without creating ambiguous state;
 - a ChatGPT interface change can be diagnosed and repaired without redesigning the entire extension; and
-- documentation lets a new Codex task continue work without relying on another chat's memory; and
-- version control provides a clear, private, and recoverable record of meaningful project changes.
+- documentation lets a new Codex task continue work without relying on another chat's memory.
 
 ## Change Control
 
@@ -134,5 +126,4 @@ Before a material charter revision:
 
 | Version | Date | Summary |
 | --- | --- | --- |
-| 0.2.0 | 2026-09-05 | Added private source-control stewardship, recoverability, sensitive-data safeguards, and owner-controlled repository governance. |
 | 0.1.0 | 2026-09-05 | Established the initial project purpose, goals, principles, scope, and success measures. |

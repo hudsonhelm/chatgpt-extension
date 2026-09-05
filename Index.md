@@ -1,6 +1,6 @@
 # ChatGPT Extension Project Index
 
-**Document version:** 0.2.0  
+**Document version:** 0.3.0  
 **Last updated:** 2026-09-05  
 **Status:** Active
 
@@ -65,7 +65,11 @@ Add new folders to this table when they are created. Also add a corresponding co
 
 ## Archive Contents
 
-The root of `Archive` mirrors the project root for archived top-level files. It is currently empty.
+The root of `Archive` mirrors the project root for archived top-level files.
+
+| File | Archived date | Replaced by | Reason retained |
+| --- | --- | --- | --- |
+| [`ProjectCharterV0.1.0.md`](Archive/ProjectCharterV0.1.0.md) | 2026-09-05 | [`ProjectCharter.md`](ProjectCharter.md) | Preserves the charter before source-control stewardship and repository-governance principles were added. |
 
 ## Archive/Docs Contents
 
